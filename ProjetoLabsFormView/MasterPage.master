@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Projeto Labs</title>
+   <link href="css/bootstrap.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder id="header"  runat="server">
+        <a href="FrmComputador.aspx">Gerenciar Computador</a>
+        <a href="FrmLaboratorio.aspx">Gerenciar Laboratorio</a>
+        <a href="FrmSoftware.aspx">Gerenciar Software</a>
+        <a href="FrmSoftware.aspx">Gerenciar Usuario</a>
+        <a href="FrmOcorrencia.aspx">Gerenciar Ocorrência</a>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="content" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        <asp:ContentPlaceHolder id="footer" runat="server">
+        <h3>FOOTER</h3>
+    </asp:ContentPlaceHolder>
+</body>
+</html>
